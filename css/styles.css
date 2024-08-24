@@ -1,1 +1,59 @@
 /* ini CSS */
+body {
+  z-index: 999;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 48px;
+  width: 48px;
+  background-image: url(https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo-RevoU-5.png);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.nav-container {
+  display: flex;
+}
+.nav-item {
+  text-decoration: none;
+  color: black;
+  border: 1px solid;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.nav-item:hover {
+  background-color: black;
+  color: white;
+}
+
+.hero-img {
+  height: 500px;
+  background-image: url(https://images.unsplash.com/photo-1724271362985-7815c11fc252?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+}
+.profile-item {
+  height: 100px;
+  text-align: -webkit-center;
+}
+
+.profile-img {
+  height: 50px;
+  background-image: url(https://picsum.photos/250);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 50px;
+}
