@@ -9,15 +9,18 @@
   <body>
     <!-- navbar section start -->
     <nav>
-      <header>
-        <div class="logo"></div>
+      <header class="navbar-header">
+        <div class="logo-container">
+          <img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo-RevoU-5.png" alt="Logo" class="navbar-logo" />
+          <div class="logo-text">Arya Restu Pratama</div>
+        </div>
       </header>
 
       <section class="nav-container">
-        <a href="" class="nav-item">Home</a>
-        <a href="" class="nav-item">Our Profile</a>
-        <a href="" class="nav-item">Achievement</a>
-        <a href="" class="nav-item">Message Us</a>
+        <a href="#" class="nav-item">Home</a>
+        <a href="#about" class="nav-item">About Me</a>
+        <a href="#ourprofile" class="nav-item">Our Profile</a>
+        <a href="#messageus" class="nav-item">Contact Me</a>
       </section>
     </nav>
     <!-- navbar section end -->
@@ -26,34 +29,100 @@
     <main>
       <!-- hero section start -->
       <article>
-        <h1>Hi !, Welcome to my website</h1>
-        <p>Ini ada website latihan arya restu pratama</p>
+        <h1>Hi !, Welcome to my website!</h1>
+        <p>Ini ada website portofolio</p>
         <div class="hero-img"></div>
       </article>
       <!-- hero section end -->
       <hr />
+
+      <!-- about section start -->
+      <section id="about">
+        <header class="header-container">
+          <h1>About Me</h1>
+        </header>
+        <div class="about-container">
+          <p>
+            Nama saya adalah Arya Restu Pratama. Saya kuliah di Universitas Mercubuana Fakultas Ilmu Komputer Prodi Teknik Informatika.
+          </p>
+          <p>Saya sangat tertarik dengan bahasa pemrograman HTML, CSS, dan JS</p>
+        </div>
+      </section>
+      <!-- about section end -->
+
+      <hr />
       <!-- profile section start -->
-      <section>
-        <header>
-          <h1>Our Facilitation</h1>
+      <section id="ourprofile">
+        <header class="header-container">
+          <h1>My Programming Languange</h1>
         </header>
         <section class="profile-container">
           <div class="profile-item">
-            <div class="profile-img"></div>
-            <h2 class="judul-profile">software engineer</h2>
+            <div class="profile-img" style="background-image: url('https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+            <h2 class="judul-html">HTML</h2>
+            <p>Menyediakan struktur dasar halaman web menggunakan elemen seperti teks, gambar, dan link.</p>
           </div>
           <div class="profile-item">
-            <div class="profile-img"></div>
-            <h2 class="judul-profile">software engineer</h2>
+            <div class="profile-img" style="background-image: url('https://media.istockphoto.com/id/1284271878/photo/javascript-inscription-against-laptop-and-code-background-learn-javascript-programming.webp?b=1&s=612x612&w=0&k=20&c=kpQCCaxIActGQP9ToVrFN3qP55MMXA4Sdnomymdr_64=')"></div>
+            <h2 class="judul-js">JavaScript</h2>
+            <p>Memungkinkan interaktivitas dan dinamika pada halaman web dengan memodifikasi konten dan perilaku elemen.</p>
           </div>
           <div class="profile-item">
-            <div class="profile-img"></div>
-            <h2 class="judul-profile">software engineer</h2>
+            <div class="profile-img" style="background-image: url('https://media.istockphoto.com/id/1415892332/photo/css-cascading-style-sheets-text-on-a-white-office-table.jpg?b=1&s=612x612&w=0&k=20&c=f9H-5VxopMqy-yFt0foz3_fNYgwLmEVqr2iDITq6bwM=')"></div>
+            <h2 class="judul-css">CSS</h2>
+            <p>Mengatur tampilan dan gaya halaman web, termasuk warna, font, dan tata letak elemen.</p>
           </div>
         </section>
       </section>
       <!-- profile section end -->
+
+      <!-- message section start -->
+      <section id="messageus">
+        <header>
+          <h1>Contact Me</h1>
+        </header>
+        <div class="message-container">
+          <form id="messageForm">
+            <label for="nama">Nama :</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama" /><br />
+
+            <label for="tanggal_lahir">Tanggal Lahir :</label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir" /><br />
+
+            <div class="gender-options">
+              <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-Laki" />
+              <label for="laki-laki">Laki-Laki</label>
+              <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" />
+              <label for="perempuan">Perempuan</label>
+            </div>
+
+            <label for="pesan">Pesan :</label>
+            <textarea id="pesan" name="pesan" placeholder="Pesan"></textarea><br />
+
+            <button type="button" onclick="displayMessage()">Kirim</button>
+          </form>
+        </div>
+        <div class="display-area">
+          <ul id="displayList"></ul>
+        </div>
+      </section>
+      <!-- message section end -->
     </main>
     <!-- main section end -->
+
+    <!-- footer section start -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Arya Restu Pratama. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon">Facebook</a>
+          <a href="#" class="social-icon">Twitter</a>
+          <a href="#" class="social-icon">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+    <script src="js/script.js"></script>
   </body>
 </html>

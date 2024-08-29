@@ -1,59 +1,320 @@
-/* ini CSS */
-body {
-  z-index: 999;
+html {
+  scroll-behavior: smooth;
 }
+
+body,
+h1,
+h2,
+p,
+a,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+}
+
 nav {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
-  height: 48px;
-  width: 48px;
-  background-image: url(https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo-RevoU-5.png);
-  background-size: cover;
+.navbar-header {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-text {
+  font-size: 1.5em;
+  color: #e0e0e0;
 }
 
 .nav-container {
   display: flex;
+  gap: 20px;
 }
+
 .nav-item {
+  color: #e0e0e0;
   text-decoration: none;
-  color: black;
-  border: 1px solid;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 8px;
+  padding: 10px;
+  transition: border-radius 0.1s;
+  padding-right: 30px;
 }
 
 .nav-item:hover {
-  background-color: black;
-  color: white;
+  background-color: #ffff;
+  border-radius: 50%;
+  color: #121212;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+article {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 60px;
+}
+
+article h1 {
+  padding-bottom: 20px;
 }
 
 .hero-img {
-  height: 500px;
-  background-image: url(https://images.unsplash.com/photo-1724271362985-7815c11fc252?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url(https://media.istockphoto.com/id/1092443974/photo/hello-speech-bubble-isolated-on-yellow-background.webp?b=1&s=612x612&w=0&k=20&c=v7eRI67o7owRfh3Fr9h7FQSyc1z-aujpQOkyRhQftGc=);
   background-size: cover;
   background-position: center;
+  height: 300px;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+}
+
+#about {
+  padding: 80px 20px;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-container {
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+#ourprofile {
+  margin-bottom: 40px;
+  padding-top: 60px;
+}
+
+.header-container {
+  text-align: center;
+  margin: 20px 0;
+  padding-bottom: 20px;
 }
 
 .profile-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
+
 .profile-item {
-  height: 100px;
-  text-align: -webkit-center;
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  margin: 10px;
+}
+
+.profile-item h2 {
+  padding-bottom: 20px;
+}
+
+.profile-item .judul-html {
+  color: rgb(255, 0, 0);
+}
+
+.profile-item .judul-js {
+  color: orange;
+}
+
+.profile-item .judul-css {
+  color: rgb(0, 162, 255);
 }
 
 .profile-img {
-  height: 50px;
-  background-image: url(https://picsum.photos/250);
   background-size: cover;
-  background-position: center;
-  border-radius: 50%;
-  width: 50px;
+  height: 150px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#messageus {
+  margin-bottom: 40px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+#messageus h1 {
+  padding-bottom: 30px;
+}
+
+.message-container {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #6200ee;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+.display-area {
+  background-color: #1f1f1f;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.display-area ul {
+  list-style: none;
+  padding: 0;
+}
+
+.display-area ul li {
+  background-color: #333;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  line-height: 1.5;
+}
+
+.gender-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.gender-options label {
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 2px solid #333;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+  background-color: #333;
+}
+
+main > * {
+  padding-top: 80px;
+}
+
+#hero {
+  padding-top: 80px;
+}
+
+#about {
+  padding-top: 80px;
+}
+
+#ourprofile {
+  padding-top: 80px;
+}
+
+#messageus {
+  padding-top: 80px;
 }
